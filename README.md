@@ -1,4 +1,4 @@
-
+[![DOI](https://zenodo.org/badge/1180903146.svg)](https://doi.org/10.5281/zenodo.19006505)
 
 # ChronoContext
 ## A Temporal Cognition Layer for Large Language Models
