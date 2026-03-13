@@ -16,6 +16,8 @@ The paper examines a structural limitation in current Large Language Model (LLM)
 
 ChronoContext introduces a conceptual architecture for a lightweight temporal cognition layer that augments LLM interactions with chronological awareness. The system detects events, maintains structured timelines, computes temporal relationships, and injects temporal context into prompts before they are processed by an LLM.
 
+A key component of the ChronoContext model is **cross-session temporal continuity**, enabling event anchors and timelines to persist across multiple conversational sessions. This allows LLM-assisted systems to reason about processes that evolve over days, weeks, or longer periods rather than within a single isolated conversation.
+
 This work is design-oriented and informational in nature. It defines a temporal context architecture but does not propose a specific implementation or product.
 
 ## Contents
@@ -33,5 +35,5 @@ Version 1.0
 
 ## Status
 
-This repository represents **version 1.0** of the paper.  
+This repository represents **Version 1.0** of the paper.  
 Future revisions, if any, will be versioned explicitly and committed separately.
