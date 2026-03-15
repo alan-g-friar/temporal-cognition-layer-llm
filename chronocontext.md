@@ -3,8 +3,8 @@
 
 Author: Alan Friar  
 Organization: EnBra Group  
-Version: 1.0  
-Date: 2026-03-13  
+Version: 1.1  
+Date: 2026-03-15  
 
 ---
 
@@ -64,7 +64,7 @@ Prompt Composer
 ↓  
 LLM  
 ↓  
-Response
+Response  
 
 The ChronoContext engine processes temporal information before each prompt is sent to the model.
 
@@ -82,7 +82,7 @@ Core variables:
 
 Derived variables:
 
-- conversation_elapsed
+- conversation_elapsed  
 - time_since_last_message  
 - time_since_event  
 - time_between_events  
@@ -164,7 +164,7 @@ This cross-session temporal continuity allows LLM-assisted systems to reason abo
 
 ## 9. Temporal Reasoning
 
-The temporal primitives defined earlier enable higher-level chronological reasoning within the ChronoContext system.  
+The temporal primitives defined earlier enable higher-level chronological reasoning within the ChronoContext system.
 
 The temporal reasoning engine calculates relationships between events.
 
@@ -204,7 +204,24 @@ This structured context allows the language model to reason chronologically with
 
 ---
 
-## 11. Applications
+## 11. Prototype Demonstration
+
+A prototype ChronoContext middleware demonstration was executed locally on 15 March 2026 to validate the architectural concepts described in this paper.
+
+The prototype detected event anchors within conversational input, stored them as persistent timeline entries, and generated structured temporal context injected into the prompt structure prior to LLM execution.
+
+The demonstration confirmed the feasibility of the ChronoContext temporal cognition architecture, including:
+
+- event anchor detection  
+- persistent timeline memory  
+- cross-session temporal continuity  
+- temporal context injection  
+
+A record of the prototype execution is included in this repository.
+
+---
+
+## 12. Applications
 
 ChronoContext enables improved reasoning in domains where time progression is important.
 
@@ -218,6 +235,6 @@ Examples include:
 
 ---
 
-## 12. Conclusion
+## 13. Conclusion
 
 ChronoContext introduces a temporal cognition layer for LLM systems that enables chronological reasoning without modifying the underlying model architecture. By detecting events, maintaining timelines, and injecting temporal context into prompts, ChronoContext allows language models to reason more effectively about processes that evolve over time and across multiple conversational sessions.
